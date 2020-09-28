@@ -1,5 +1,3 @@
-package javaAssignment;
-
 import java.io.File;
 import java.util.regex.Pattern;
 
