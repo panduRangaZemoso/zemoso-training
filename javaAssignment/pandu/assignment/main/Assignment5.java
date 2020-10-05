@@ -1,7 +1,7 @@
 package pandu.assignment.main;
 
-import pandu.assignment.data.ExampleClass1;
-import pandu.assignment.singleton.ExampleClass2;
+import pandu.assignment.data.PrintDataMember;
+import pandu.assignment.singleton.Member;
 
 // PART-C
 public class Assignment5 {
@@ -9,14 +9,14 @@ public class Assignment5 {
     public static void main(String[] args){
 
         // PART-A
-        ExampleClass1 eg1 = new ExampleClass1();
+        PrintDataMember eg1 = new PrintDataMember();
         eg1.printDataMembers();
         // ERROR OCCURS HERE
-        eg1.exampleFunction();
+        eg1.printMethodDataMembers();
 
         // PART-B
-        System.out.println(ExampleClass2.staticInitializer("pandu").getMember());
-        System.out.println(ExampleClass2.staticInitializer("pallav").getMember());
+        System.out.println(Member.staticInitializer("pandu").getMember());
+        System.out.println(Member.staticInitializer("pallav").getMember());
 
     }
 }

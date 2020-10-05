@@ -1,6 +1,6 @@
 package pandu.assignment.data;
 
-public class ExampleClass1 {
+public class PrintDataMember {
     int a;
     char b;
 
@@ -8,7 +8,7 @@ public class ExampleClass1 {
         System.out.println("a : "+a+" b: "+ b);
     }
 
-    public void exampleFunction(){
+    public void printMethodDataMembers(){
         int c; char d;
         // CANNOT WORK ON JAVA METHOD VARIABLES WHEN NOT-INITIALIZED
         //System.out.println(c+" "+d);

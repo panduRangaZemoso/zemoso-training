@@ -14,12 +14,12 @@ public class Assignment6 {
         System.out.println(student.standard);
 
         // PART-C
-        Example[] examples = new Example[5];
+        PrintMessage[] printMessages = new PrintMessage[5];
 
 
         // PART-D
-        for (int i = 0; i < examples.length; i++) {
-            examples[i] = new Example();
+        for (int i = 0; i < printMessages.length; i++) {
+            printMessages[i] = new PrintMessage();
         }
     }
 
@@ -74,29 +74,29 @@ public class Assignment6 {
 
         // Store the generated sequence into
         // the resultant Arraylist
-        List<String> Res = new ArrayList<>();
+        List<String> resultList = new ArrayList<>();
         for (String s : prevRes) {
             for (int i = 0; i <= s.length(); i++) {
                 String f = s.substring(0, i) + ch + s.substring(i);
 
                 // If the generated string is not
                 // already present in the Arraylist
-                if (!isPresent(f, Res))
+                if (!isPresent(f, resultList))
 
                     // Add the generated string to the Arraylist
-                    Res.add(f);
+                    resultList.add(f);
             }
         }
 
         // Return the resultant arraylist
-        return Res;
+        return resultList;
     }
 
-    static boolean isPresent(String s, List<String> Res)
+    static boolean isPresent(String s, List<String> list)
     {
 
         // If present then return true
-        for (String str : Res) {
+        for (String str : list) {
 
             if (str.equals(s))
                 return true;
@@ -121,9 +121,9 @@ class Student{
     }
 }
 
-class Example{
-    public Example() {
-        System.out.println("Instance of Example is being created");
+class PrintMessage {
+    public PrintMessage() {
+        System.out.println("Printing Message");
     }
 }
 
